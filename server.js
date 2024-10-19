@@ -10,5 +10,9 @@ app.get("/about", async (req, res) => {
     res.send('<h3>About</h3>');
 });
 
+app.get("/home", async (req, res) => {
+    res.send('<h3>Home</h3>');
+});
+
 
 app.listen('4000');
