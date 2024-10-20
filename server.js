@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require('path');
 
 
 app.get("/", async (req, res) => {
@@ -7,7 +8,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/about", async (req, res) => {
-    res.send('<h3>About</h3>');
+    res.sendFile(path.resolve('./views/about.html'));
 });
 
 app.get("/home", async (req, res) => {
