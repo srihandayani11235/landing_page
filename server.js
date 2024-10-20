@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get("/", async (req, res) => {
-    res.send('<h3>Hallo</h3>');
+    res.send('<h3>Menu : <a href="/about"> about </a> | <a href="/home"> home </a> | <a href="/gallery"> gallery </a> | <a href="/video"> video </a></h3>');
 });
 
 app.get("/about", async (req, res) => {
@@ -18,7 +18,7 @@ app.get("/gallery", async (req, res) => {
     res.send('<h3>Gallery</h3>');
 });
 
-app.get("/Video", async (req, res) => {
+app.get("/video", async (req, res) => {
     res.send('<h3>Video</h3>');
 });
 
