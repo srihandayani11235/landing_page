@@ -19,5 +19,9 @@ app.get("/video", async (req, res) => {
     res.sendFile(path.resolve('./views/video.html'));
 });
 
+app.get("/detail/:id", async (req, res) => {
+    res.sendFile(path.resolve('./views/detail.html'));
+});
+
 
 app.listen('4000');
